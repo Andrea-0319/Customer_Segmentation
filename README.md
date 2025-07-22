@@ -11,15 +11,13 @@ In addition to segmentation, exploration of the dataset (and community discussio
 **Objectives:**  
 - Clean and preprocess raw data: handle missing values, remove inconsistencies, engineer key features 🔧  
 - Perform exploratory analysis and correlation studies to understand customer behavior 📊  
-- Apply and compare multiple clustering algorithms (K-Means, Agglomerative Clustering, DBSCAN) with PCA for 2D/3D visualization 🔍  
-- Validate segment quality via Silhouette score ✔️  
+- Apply K-Means++ with PCA for 2D/3D visualization 🔍  
 - Profile and label four actionable segments (“Stars,” “High Potential,” “Need Attention,” “Leaky Bucket”) to inform targeted marketing 🚀
 - Discover and leverage the “Response” column for a supervised task: build and tune a binary classifier to predict campaign acceptance. 🎯
 
 
 **Main Results:**  
 - Four distinct customer groups with clear profiles and business recommendations  
-- Silhouette scores > 0.5 across models, indicating well-separated clusters  
 - Visual dashboards illustrating segment distribution in income vs. spend spac
 - Developed a predictive model (soft-voting ensemble of Logistic Regression & Random Forest, plus Bagging-DecisionTree) achieving ROC-AUC > 0.96 on held-out data.  
 
@@ -28,7 +26,7 @@ In addition to segmentation, exploration of the dataset (and community discussio
 - **Python**  
 - **pandas** (data manipulation)  
 - **NumPy** (numerical operations)
-- **scikit-learn** (clustering, PCA, supervised models, cross-validation, GridSearchCV, validation metrics)  
+- **scikit-learn** (K-Means, PCA, supervised models, cross-validation, GridSearchCV, validation metrics)  
 - **imbalanced-learn** (SMOTE) for class balancing  
 - **seaborn** & **matplotlib** (visualizations)  
 - **plotly** (interactive 3D plots)
